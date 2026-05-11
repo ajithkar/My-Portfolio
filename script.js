@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   cvButton.addEventListener('click', () => {
     // Create a temporary anchor element
     const link = document.createElement('a');
-    link.href = 'CV_Ajithkar.pdf'; // ⚠️ REPLACE WITH YOUR ACTUAL CV FILE PATH
-    link.download = 'YourName_CV.pdf'; // Filename shown to user
+    link.href = 'CV_Ajithkar.pdf';
+    link.download = 'YourName_CV.pdf';
     link.target = '_blank';
     
     // Append to body, click, then remove
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    // In a real app, you'd send data to a backend or use EmailJS/Formspree
     const btn = contactForm.querySelector('button');
     const originalText = btn.textContent;
     
